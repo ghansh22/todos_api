@@ -89,7 +89,7 @@ exports.get_todos = (req, res) => {
             })
         } else {
             db.collection(todo_col).find({}, (error, result) => {
-                debugger
+               // debugger
                 if (error) {
                     res.status(503).send({
                         msg: "failure",
